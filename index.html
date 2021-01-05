@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="author" content="João Gabriel Silva Gomes">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+  <title>Music Player | by João Gabriel</title>
+  <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <div class="music-player-container">
+    <div class="music-player">
+      <h1 class="music-title"></h1>
+      <h2 class="music-author"></h2>
+      <div class="music-cover-container">
+        <img src="" alt="" class="music-cover">
+      </div>
+      <div class="music-track-container">
+        <span class="music-current-minutes"></span>
+        <input type="range" name="music-track" id="music-track" class="music-track">
+        <span class="music-total-minutes"></span>
+      </div>
+      <div class="music-buttons">
+        <button class="btn-prev" title="Anterior"><i class="fas fa-angle-double-left"></i></button>
+        <button class="btn-play" title="Play / Pause"><i class="fas fa-play"></i></button>
+        <button class="btn-next" title="Próximo"><i class="fas fa-angle-double-right"></i></button>
+      </div>
+      <div class="music-volume">
+        <button class="btn-mute"><i class="fas fa-volume-mute"></i></button>
+        <input type="range" name="volume-track" id="volume-track" class="volume-track">
+        <button class="btn-volume"><i class="fas fa-volume-up"></i></button>
+      </div>
+    </div>
+  </div>
+  <script type="module" src="./scripts/script.js"></script>
+</body>
+</html>
